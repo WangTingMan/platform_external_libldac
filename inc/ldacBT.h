@@ -19,6 +19,23 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#if defined(WIN32) || defined(_MSC_VER)
+
+#if defined(LIBLDACBTENC_EXPORTS)
+#define LDACBT_API __declspec(dllexport)
+#else
+#define LDACBT_API __declspec(dllimport)
+#endif  // defined(LIBLDACBTENC_EXPORTS)
+
+#else  // defined(WIN32)
+#if defined(LIBLDACBTENC_EXPORTS)
+#define LDACBT_API __attribute__((visibility("default")))
+#else
+#define LDACBT_API
+#endif  // defined(LIBLDACBTENC_EXPORTS)
+#endif
+
 #ifndef LDACBT_API
 #define LDACBT_API
 #endif /* LDACBT_API  */

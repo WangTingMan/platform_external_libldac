@@ -27,7 +27,11 @@
 ***************************************************************************************************/
 
 #define DECLFUNC static
+#ifndef _MSC_VER
 #define UNUSED_ATTR __attribute__((unused))
+#else
+#define UNUSED_ATTR
+#endif
 
 #ifndef PI
 #ifdef M_PI

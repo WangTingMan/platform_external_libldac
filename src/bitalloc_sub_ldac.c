@@ -20,7 +20,7 @@
     Calculate Bits for Band Info
 ***************************************************************************************************/
 static int encode_band_info_ldac(
-__attribute__((unused)) AB *p_ab)
+/*__attribute__((unused))*/ AB *p_ab)
 {
     int	nbits;
 

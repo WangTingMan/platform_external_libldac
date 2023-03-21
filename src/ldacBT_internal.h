@@ -20,7 +20,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
+#ifndef _MSC_VER
 #include <unistd.h>
+#endif
 #include "struct_ldac.h"
 
 #ifdef    __cplusplus

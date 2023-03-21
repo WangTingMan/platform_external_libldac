@@ -78,6 +78,22 @@
 extern "C" {
 #endif
 
+#if defined(WIN32) || defined(_MSC_VER)
+
+#if defined(LIBLDACBTABR_EXPORTS)
+#define LDAC_ABR_API __declspec(dllexport)
+#else
+#define LDAC_ABR_API __declspec(dllimport)
+#endif  // defined(LIBLDACBTABR_EXPORTS)
+
+#else  // defined(WIN32)
+#if defined(LIBLDACBTABR_EXPORTS)
+#define LDAC_ABR_API __attribute__((visibility("default")))
+#else
+#define LDAC_ABR_API
+#endif  // defined(LIBLDACBTABR_EXPORTS)
+#endif
+
 #ifndef LDAC_ABR_API
 #define LDAC_ABR_API
 #endif /* LDAC_ABR_API */
