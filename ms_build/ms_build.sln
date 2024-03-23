@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libldacBT_enc", "libldacBT_enc\libldacBT_enc.vcxproj", "{90D1881F-46BF-428B-9166-406BB61C79CD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libldacBT_abr", "libldacBT_abr\libldacBT_abr.vcxproj", "{32DC5EEE-83E7-4099-97BA-DCA74C318D66}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libldacdec", "libldacdec\libldacdec.vcxproj", "{79CE931F-EF14-4E1C-9CFD-F4443825D444}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{32DC5EEE-83E7-4099-97BA-DCA74C318D66}.Release|x64.Build.0 = Release|x64
 		{32DC5EEE-83E7-4099-97BA-DCA74C318D66}.Release|x86.ActiveCfg = Release|Win32
 		{32DC5EEE-83E7-4099-97BA-DCA74C318D66}.Release|x86.Build.0 = Release|Win32
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Debug|x64.ActiveCfg = Debug|x64
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Debug|x64.Build.0 = Debug|x64
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Debug|x86.ActiveCfg = Debug|Win32
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Debug|x86.Build.0 = Debug|Win32
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Release|x64.ActiveCfg = Release|x64
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Release|x64.Build.0 = Release|x64
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Release|x86.ActiveCfg = Release|Win32
+		{79CE931F-EF14-4E1C-9CFD-F4443825D444}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
